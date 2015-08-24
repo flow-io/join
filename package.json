@@ -1,0 +1,63 @@
+{
+  "name": "flow-join",
+  "version": "0.0.0",
+  "description": "Transform stream which joins streamed data.",
+  "author": {
+    "name": "Athan Reines",
+    "email": "kgryte@gmail.com"
+  },
+  "contributors": [
+    {
+      "name": "Athan Reines",
+      "email": "kgryte@gmail.com"
+    }
+  ],
+  "scripts": {
+    "test": "mocha",
+    "test-cov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/coverage -- -R spec",
+    "codecov": "istanbul cover ./node_modules/.bin/_mocha --dir ./reports/codecov/coverage --report lcovonly -- -R spec && cat ./reports/codecov/coverage/lcov.info | codecov && rm -rf ./reports/codecov"
+  },
+  "main": "./lib",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/flow-io/join.git"
+  },
+  "keywords": [
+    "flow.io",
+    "flow-io",
+    "flow",
+    "stream",
+    "streams",
+    "writable",
+    "readable",
+    "transform",
+    "newline",
+    "delimited",
+    "delimiter",
+    "join"
+  ],
+  "bugs": {
+    "url": "https://github.com/flow-io/join/issues"
+  },
+  "dependencies": {
+    "minimist": "^1.1.3",
+    "pkginfo": "^0.3.0",
+    "readable-stream": "^2.0.2",
+    "utils-copy": "^1.0.0",
+    "validate.io-boolean-primitive": "^1.0.0",
+    "validate.io-nonnegative": "^1.0.0",
+    "validate.io-object": "^1.0.4",
+    "validate.io-string-primitive": "^1.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.x.x",
+    "codecov.io": "^0.1.5",
+    "flow-split": "git://github.com/flow-io/split.git",
+    "istanbul": "^0.3.0",
+    "jshint": "2.x.x",
+    "jshint-stylish": "2.x.x",
+    "mocha": "2.x.x",
+    "through2": "^2.0.0"
+  },
+  "license": "MIT"
+}
