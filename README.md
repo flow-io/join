@@ -113,7 +113,7 @@ tStream.end();
 var splitStream = require( 'flow-split' ),
 	joinStream = require( 'flow-join' );
 
-// Create a new split stream for tab delimited data:
+// Create a split stream for tab delimited data:
 var split = splitStream({
 	'sep': /\t/
 });
